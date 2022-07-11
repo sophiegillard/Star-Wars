@@ -1,0 +1,91 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("/stars.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 50px;
+}
+
+.longTime {
+  color: rgb(0, 183, 255);
+  font-size: 100px;
+  width: 65rem;
+  position: absolute;
+  animation: appear 6s forwards;
+  z-index: 1;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.logo {
+  position: absolute;
+  height: 120%;
+  z-index: 2;
+  animation: smaller 5S ease-out 6s;
+  opacity: 0;
+}
+
+@keyframes smaller {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 0;
+    opacity: 1;
+  }
+}
+.text {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: rgb(255, 215, 54);
+  top: 100%;
+  font-size: 100px;
+  width: 80rem;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: defile 20s linear 5s;
+  position: relative;
+  z-index: 2;
+  perspective: 300px;
+  transform: rotateX(40deg);
+}
+.text h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9rem;
+}
+.text h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+@keyframes defile {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+/*# sourceMappingURL=star.css.map */
